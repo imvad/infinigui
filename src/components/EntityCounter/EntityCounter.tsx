@@ -9,10 +9,7 @@ import './EntityCounter.css'
 
 
 export interface EntityCounter {
-    color: "inherit" | "primary" | "secondary" | "success" | "error" | "info" | "warning" | undefined;
     children: ReactNode;
-    size: "small" | "medium" | "large" | undefined;
-    variant: "text" | "contained" | "outlined" | undefined;
     title: ReactNode;
 }
 

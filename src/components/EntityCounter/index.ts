@@ -1,1 +1,1 @@
-export { default, CounterPair, CounterTitle } from './EntityCounter'
+export { default } from './EntityCounter'
