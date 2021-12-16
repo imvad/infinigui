@@ -1,30 +1,54 @@
 {
-    "name": "@imvad/infinigui",
-    "version": "0.0.2",
-    "description": "",
-    "scripts": {
-        "rollup": "rollup -c"
-    },
-    "author": "Vadim All",
-    "license": "ISC",
-    "devDependencies": {
-        "@rollup/plugin-commonjs": "^21.0.1",
-        "@rollup/plugin-node-resolve": "^13.0.6",
-        "@rollup/plugin-typescript": "^8.3.0",
-        "@types/react": "^17.0.37",
-        "react": "^17.0.2",
-        "rollup": "^2.60.2",
-        "rollup-plugin-dts": "^4.0.1",
-        "rollup-plugin-postcss": "^4.0.2",
-        "typescript": "^4.5.2"
-    },
-    "main": "dist/cjs/index.js",
-    "module": "dist/esm/index.js",
-    "files": [
-        "dist"
-    ],
-    "types": "dist/index.d.ts",
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/imvad"
-    }
+  "name": "@imvad/infinigui",
+  "version": "0.0.3",
+  "description": "",
+  "scripts": {
+    "rollup": "rollup -c",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "Vadim All",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "@babel/preset-typescript": "^7.16.5",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.1.21",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/react": "^6.4.9",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.0.3",
+    "@types/react": "^17.0.37",
+    "babel-jest": "^27.4.5",
+    "babel-loader": "^8.2.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.4.5",
+    "react": "^17.0.2",
+    "rollup": "^2.60.2",
+    "rollup-plugin-dts": "^4.0.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "storybook-addon-material-ui": "^0.9.0-alpha.24",
+    "typescript": "^4.5.2"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/imvad"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.4",
+    "@mui/material": "^5.2.4"
+  }
 }

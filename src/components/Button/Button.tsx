@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
+import Button from '@mui/material/Button';
+
 import './Button.css'
 
-interface ButtonProps {
-    label: string;
+export interface ButtonProps {
+    color: "inherit" | "primary" | "secondary" | "success" | "error" | "info" | "warning" | undefined;
+    children: ReactNode;
+    size: "small" | "medium" | "large" | undefined;
+    variant: "text" | "contained" | "outlined" | undefined;
 }
 
-const Button = (props: ButtonProps) => {
-    return <button>{props.label}</button>
+const IButton = (props: ButtonProps) => {
+    console.log(props)
+    return <Button {...props}>{props.children}</Button>
 }
 
-export default Button
+export default IButton
