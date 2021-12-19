@@ -1,6 +1,6 @@
 {
   "name": "@imvad/infinigui",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "",
   "scripts": {
     "rollup": "rollup -c",
@@ -35,6 +35,9 @@
     "rollup-plugin-postcss": "^4.0.2",
     "storybook-addon-material-ui": "^0.9.0-alpha.24",
     "typescript": "^4.5.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
