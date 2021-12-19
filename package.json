@@ -1,6 +1,6 @@
 {
   "name": "@imvad/infinigui",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "",
   "scripts": {
     "rollup": "rollup -c",
@@ -39,7 +39,9 @@
   },
   "peerDependencies": {
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "@mui/icons-material": "^5.2.4",
+    "@mui/material": "^5.2.4"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
