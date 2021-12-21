@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import EntityCounter, { CounterTitle } from './EntityCounter';
+import EntityCounter, { CounterTitle }from './EntityCounter';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -23,5 +23,5 @@ Default.args = {
     // color: "primary",
     // size: 'large',
     // variant: 'contained',
-    children: <EntityCounter.Pair title="asdf" count="2" />
+    children: <EntityCounter.Pair title="Volumes & FS" count="2"/>
 };
