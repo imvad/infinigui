@@ -1,0 +1,14 @@
+.card {
+    min-width: 275px;
+    max-width: 400px;
+    max-height: 150px;
+}
+
+.card__title {
+    display: flex;
+}
+
+.card__counter_pair {
+    display: flex;
+    justify-content: space-between;
+}
