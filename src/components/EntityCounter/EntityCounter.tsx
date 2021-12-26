@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 
 import { Card, CardActions, CardContent, Button, Typography, SvgIcon, SvgIconProps } from '@mui/material';
-import { ThemeProvider } from '@mui/material';
+import { ThemeProvider, Button } from '@mui/material';
 import { StylesProvider } from "@material-ui/core";
 
 import customTheme from '../../lib/theme';
@@ -24,23 +24,24 @@ export interface CounterTitleProps {
   icon: SvgIconProps;
 }
 
-const EntityCounter = (props: EntityCounterProps) => {
+const EntityCounter = () => {
   return (
-    <ThemeProvider theme={customTheme}>
-      <Card className="card">
-        <CardContent className="card__content">
-          <div style={{ padding: 1 }} className="card__title">
-            {props.title}
-          </div>
-          <div className='card__counter_pair'>
-            {props.children}
-          </div>
-        </CardContent>
-        <CardActions sx={{ paddingX: 0 }}>
-          <Button color='primary' fullWidth size="small" variant='contained'>View</Button>
-        </CardActions>
-      </Card>
-    </ThemeProvider>
+      <Button>asdf</Button>
+    // <ThemeProvider theme={customTheme}>
+    //   <Card className="card">
+    //     <CardContent className="card__content">
+    //       <div style={{ padding: 1 }} className="card__title">
+    //         {props.title}
+    //       </div>
+    //       <div className='card__counter_pair'>
+    //         {props.children}
+    //       </div>
+    //     </CardContent>
+    //     <CardActions sx={{ paddingX: 0 }}>
+    //       <Button color='primary' fullWidth size="small" variant='contained'>View</Button>
+    //     </CardActions>
+    //   </Card>
+    // </ThemeProvider>
   )
 }
 
